@@ -1,0 +1,193 @@
+/* Global resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+  color: #424242;
+  line-height: 1.4;
+}
+
+/* Your CSS goes here */
+
+#recreation {
+  width: 302px;
+  margin: 0 auto;
+  color: #777;
+  position: relative;
+  top: -1px;
+  display: inline-block;
+  font-weight: 100;
+/*   left: -325px; */
+}
+
+#top {
+  background-color: #424242;
+  color: white;
+  border-radius: 3px;
+  padding: 15px;
+  text-align: center;
+}
+
+#topTriangle {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 47px;
+  right: 34px;
+  border: 8px solid rgba(66, 66, 66, 0);
+  border-top: 10px solid rgba(66, 66, 66);
+  
+}
+#topTriangle::after {
+  content: ' ';
+}
+
+#mid {
+  border: 1px solid  #eaeaea;
+  margin: 10px 0
+}
+
+#mid article {
+  padding: 12px 20px 0;
+}
+
+#progressBar_wrapper {
+  text-align: left;
+  border-bottom: 1px solid #eaeaea;
+}
+
+#progressBar {
+  position: relative;
+  left: 1px;
+  background-color: #EF5F3C;
+  width: 75%;
+  height: .8em;
+  
+}
+
+article p {
+  font-size: 14px;
+}
+
+p.daysLeft {
+  margin-bottom: 15px;
+}
+
+.orangeText {
+  color: #EF5F3C;
+  font-weight: bold;
+}
+
+#payment {
+  height: 50px;
+  margin-top: 15px;
+}
+
+.currencyinput {
+  border: 1px solid #eaeaea;
+  padding: 12px 8px;
+  border-radius: 3px;
+  margin-right: 10px;
+  width: 47%;
+  font: inherit;
+  font-size: large;
+  font-weight: bold;
+}
+
+.currencyinput input {
+  border: 0;
+  padding: 0 5px;
+  width: 80%;
+  font: inherit;
+  font-weight: bold;
+  font-size: inherit;
+  color: #424242;
+}
+
+#giveNow {
+  width: 47%;
+}
+
+#giveNow button {
+  background-color: #1CBC2C;
+/*   background-color: pink; */
+  color: white;
+  padding: 14px;
+  border: 0;
+  border-radius: 3px;
+/*   margin-left: 10px; */
+  font-size: large;
+  font-family: inherit;
+  width: 100%;
+  position: relative;
+/*   left: -10px; */
+}
+
+p#whyGive {
+  margin-top: 7px;
+}
+
+p#whyGive a {
+  font-style: italic;
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: 100;
+  color: #20A1D4;
+}
+
+.btn {
+  posiiton: inline;
+  padding: 10px 15px;
+  color: #777;
+  background-color: white;
+  border-radius: 3px;
+  width: 47%;
+  height: 40px;
+  font-weight: bold;
+  font-family: inherit;
+  font-size: small;
+  float: left;
+  border: 1px solid #eaeaea;
+}
+
+#bottom {
+  margin-top: 12px;
+}
+
+/* UTILITIES */
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.smallSub {
+/* I would have made numbers have oldstyle look if the font I used had the glyphs available in their package; however, since 'rooney-sans' is a purchased font and the others don't allow oldstyle setting, I improvised a bit. I went with the second option. */
+/*  
+  font-variant-numeric: oldstyle-nums;
+  font-feature-setting: 'onum';
+*/
+/*
+  position: relative;
+  top: 2px;   
+*/
+  font-family: Georgia,sans-serif;
+}
+
+.difLineHeight {
+  line-height: 1.6;
+}
+
+/* COLORS: 
+  blue: #20A1D4;
+  green: #1CBC2C;
+  orange: #EF5F3C;
+  black: #424242;
+  grey: #777;
+  light grey: #eaeaea;
+*/
